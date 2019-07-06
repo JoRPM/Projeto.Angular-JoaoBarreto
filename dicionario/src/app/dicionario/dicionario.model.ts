@@ -1,6 +1,6 @@
 export interface Dicionario {
     id:number;
     palavra:string;
-    alt:string;
+    sinonimo:string;
     descricao:string;
 }

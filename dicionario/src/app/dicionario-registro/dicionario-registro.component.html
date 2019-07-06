@@ -4,15 +4,18 @@
       <form>
         <div class="form-group">
           <label for="idPalavra">Palavra</label>
-          <input id="idPalavra" type="text" class="form-control" placeholder="Informe a Palavra">
+          <input formControlName="palavra" id="idPalavra" type="text" class="form-control" placeholder="Informe a Palavra">
+          <small *ngIf="dicForm.get('palavra').errors?.required" class="text-danger d-block mt-2">Informe a Palavra</small>
         </div>
         <div class="form-group">
           <label for="idSinonimo">Sinônimo</label>
-          <input id="idSinonimo" type="text" class="form-control" placeholder="Informe o Sinônimo">
+          <input formControlName="sinonimo" id="idSinonimo" type="text" class="form-control" placeholder="Informe o Sinônimo">
+          <small *ngIf="dicForm.get('sinonimo').errors?.required" class="text-danger d-block mt-2">Informe o Sinônimo</small>
         </div>
         <div class="form-group">
           <label for="idSignificado">Significado</label>
-          <input id="idSignificado" type="text" class="form-control" placeholder="Informe o Significado">
+          <input formControlName="significado" id="idSignificado" type="text" class="form-control" placeholder="Informe o Significado">
+          <small *ngIf="dicForm.get('significado').errors?.required" class="text-danger d-block mt-2">Informe o Significado</small>
         </div>
         <div class="form-group">
           <button type="submit" class="btn btn-dark">Registrar</button>

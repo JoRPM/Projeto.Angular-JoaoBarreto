@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
 })
 export class DicionarioComponent {
 @Input() palavra:string;
-@Input() alternativo:string;
+@Input() sinonimo:string;
 @Input() significado:string;
 
 
