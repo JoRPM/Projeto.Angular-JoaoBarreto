@@ -2,11 +2,45 @@
   "dicionario": [
     {
       "id": 1,
-      "palavra": "Legendary SS Broly",
-      "sinonimo": "The Legendary Super Saiyan",
-      "significado": "teste"
-      
+      "palavra": "Lerdeza",
+      "sinonimo": "idiotice",
+      "antonimo": "sagacidade",
+      "significado": "Ausência de discernimento; falta de agilidade no raciocínio; estupidez."
+    },
+    {
+      "palavra": "devasso",
+      "sinonimo": "erótico",
+      "antonimo": "honrado",
+      "significado": "Diz-se da pessoa que é imoral; que é libertino; obsceno.",
+      "id": 2
+    },
+    {
+      "palavra": "Rico",
+      "sinonimo": "fértil",
+      "antonimo": "pobre",
+      "significado": "Sujeito endinheirado; quem tem muitos bens materiais, propriedades, riquezas.",
+      "id": 3
+    },
+    {
+      "palavra": "Traidor",
+      "sinonimo": "enganador",
+      "antonimo": "leal",
+      "significado": "Aquele que trai, comete traição; que age traiçoeira e deslealmente; traiçoeiro: traidor da pátria e inimigo da nação.",
+      "id": 4
+    },
+    {
+      "palavra": "Belo",
+      "sinonimo": "galante",
+      "antonimo": "feio",
+      "significado": "Que tem forma ou aparência agradável, perfeita, harmoniosa.",
+      "id": 5
+    },
+    {
+      "palavra": "Louco",
+      "sinonimo": "maluco",
+      "antonimo": "racional",
+      "significado": "Que perdeu a razão; alienado, doido, maluco.",
+      "id": 6
     }
   ]
 }
-  

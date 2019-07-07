@@ -11,7 +11,7 @@
     <div class="container-fluid">
         <!-- NavBar -->
         <header>
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
             <a class="navbar-brand" href="#" routerLink="/">JOASDICIONARIO</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -33,13 +33,10 @@
                 <!-- Binding Event -->
                 <input (keyup)="valorBusca = $event.target.value" class="form-control mr-sm-2" type="search" placeholder="Buscar Palavra(s)" aria-label="Search">
                 <!-- Call Event -->
-                <button (click)="msgNoConsole()" class="btn btn-dark btn-outline-warning my-2 my-sm-0" type="button">Buscar</button>
+                <button (click)="msgNoConsole()" class="btn btn-light btn-outline-dark my-2 my-sm-0" type="button">Buscar</button>
               </form>
-              <ul class="navbar-nav ml-auto">
-                <li>
-                  <button routerLink="/login" class="btn btn-dark btn-outline-warning my-2 my-sm-0" type="button">Login</button>
-                </li>
-              </ul>
+              
+              
             </div>
           </nav>
         </header>

@@ -24,7 +24,13 @@ export class DicionarioRegistroComponent implements OnInit {
       
       ]
     ],
-      sinonimo: ['', Validators.required
+      sinonimo: ['', Validators.required,
+                      
+    
+    ],
+    antonimo: ['', Validators.required,
+                   
+
     
     ],
       significado: ['', Validators.required
@@ -34,7 +40,7 @@ export class DicionarioRegistroComponent implements OnInit {
     });
   }
 
-  addFoto() {
+  addPalavra() {
     const novaPalavra = this.dicForm.getRawValue() as Dicionario;
     this.dicionarioService
     .adcPalavra(novaPalavra)

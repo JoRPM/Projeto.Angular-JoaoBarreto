@@ -11,8 +11,8 @@ export class DicionarioListComponent implements OnInit {
 
   dicionario:Dicionario[];
 
-  constructor(private DicionarioService: DicionarioService){
-    DicionarioService.listaDicionario().subscribe(
+  constructor(private dicionarioService: DicionarioService){
+    dicionarioService.listaDicionario().subscribe(
       dicionarioDB => this.dicionario = dicionarioDB,
       erroDB => console.log(erroDB)
     );

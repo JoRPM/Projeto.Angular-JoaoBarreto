@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { DicionarioRegistroComponent } from '../dicionario-registro/dicionario-registro.component';
 import { DicionarioListComponent } from '../dicionario-list/dicionario-list.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [
@@ -14,7 +15,8 @@ import { DicionarioListComponent } from '../dicionario-list/dicionario-list.comp
     // são os modulos que serão incorporados nesse arquivo
     imports: [
         CommonModule,
-        HttpClientModule
+        HttpClientModule,
+        ReactiveFormsModule
     ],
     // são os componentes que serão permitido 'acesso por terceiros'
     exports: [

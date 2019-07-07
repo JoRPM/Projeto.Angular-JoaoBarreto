@@ -1,11 +1,8 @@
-<div class="col-sm-1 col-md-4 col-lg-4">
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <img [src]="url" class="rounded img-fluid float-left" alt="...">
-          <h6 class="card-subtitle mb-2 text-muted">{{palavra}}</h6>
-          <p class="card-text">{{significado}}</p>
-          <a href="#" class="card-link">Curtir</a>
-          <input type="checkbox" class="card-link" >Seguir
-        </div>
-      </div>
+<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+  <div class="card-header">{{palavra}}</div>
+  <div class="card-body">
+    <h5 class="card-title">{{significado}}</h5>
+    <p class="card-text">Sinônimo:   {{sinonimo}}</p>
+    <p class="card-text">Antônimo: {{antonimo}}</p>
   </div>
+</div>

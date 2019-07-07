@@ -1,7 +1,7 @@
 <div class="col-6 offset-2">
     <fieldset>
       <legend>Cadastro de Palavras</legend>
-      <form>
+      <form [formGroup]="dicForm" (submit)="addPalavra()">
         <div class="form-group">
           <label for="idPalavra">Palavra</label>
           <input formControlName="palavra" id="idPalavra" type="text" class="form-control" placeholder="Informe a Palavra">
@@ -13,13 +13,19 @@
           <small *ngIf="dicForm.get('sinonimo').errors?.required" class="text-danger d-block mt-2">Informe o Sinônimo</small>
         </div>
         <div class="form-group">
+        <label for="idAntonimo">Antônimo</label>
+        <input formControlName="antonimo" id="idAntonimo" type="text" class="form-control" placeholder="Informe o Sinônimo">
+        <small *ngIf="dicForm.get('antonimo').errors?.required" class="text-danger d-block mt-2">Informe o Antônimo</small>
+      </div>
+        <div class="form-group">
           <label for="idSignificado">Significado</label>
           <input formControlName="significado" id="idSignificado" type="text" class="form-control" placeholder="Informe o Significado">
           <small *ngIf="dicForm.get('significado').errors?.required" class="text-danger d-block mt-2">Informe o Significado</small>
         </div>
         <div class="form-group">
-          <button type="submit" class="btn btn-dark">Registrar</button>
+          <button type="submit" class="btn btn-primary">Enviar</button>
         </div>
+      
       </form>
     </fieldset>
   </div>

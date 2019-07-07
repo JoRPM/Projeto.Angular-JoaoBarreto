@@ -22,9 +22,9 @@ export class DicionarioService {
 
 
 
-adcPalavra(novaPalavra:Dicionario) {
+adcPalavra(newPalavra:Dicionario) {
 
-        return this.http.post(`${URL_API}/dicionario`, novaPalavra, httpOptions);
+        return this.http.post(`${URL_API}/dicionario`, newPalavra, httpOptions);
     }
 
 
